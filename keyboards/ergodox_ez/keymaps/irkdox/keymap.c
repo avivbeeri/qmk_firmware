@@ -151,11 +151,6 @@ uint8_t layer_state_set_user(uint8_t state) {
     default:
       break;
   }
-  if (biton32(state) == 0) {
-    ergodox_right_led_1_off();
-  } else {
-    ergodox_right_led_1_on();
-  }
   return state;
 };
 
